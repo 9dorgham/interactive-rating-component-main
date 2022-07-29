@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="rating card">
+        <span class="star-box">
+          <svg class="icon star">
+            <use xlink:href="images/sprite.svg#star"></use>
+          </svg>
+        </span>
+        <h2>How did we do?</h2>
+        <p> 
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        <ul id="list">
+          <li class="item">1</li>
+          <li class="item">2</li>
+          <li class="item">3</li>
+          <li class="item">4</li>
+          <li class="item">5</li>
+        </ul>
+        <input type="submit" value="Submit">
+      </div>
+    
+      <div class="thanks card">
+        <svg class="icon mobile">
+          <use xlink:href="images/sprite.svg#thank"></use>
+        </svg>
+        <p class="result"></p>
+        <h2>Thank you!</h2> 
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

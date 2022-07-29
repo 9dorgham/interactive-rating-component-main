@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Overpass';
+  font-size: 15px;
+}
+
+/* Font */
+@font-face {
+  font-family: 'Overpass';
+  src: url(../Font/Overpass/Overpass-VariableFont_wght.ttf);
+}
+
+/* main colors */
+:root {
+  --L-G: hsl(217, 12%, 63%);
+  --M-G: hsl(216, 12%, 54%);
+  --D-B: #1E252F;
+  --V-D-B: hsl(216, 12%, 8%);
+  --My-B: #262F38;
+  --h-f: clamp(0.7em, 1.5em, 3em);
+  --orange: #FF7510;
+}
+
+/* Icons */
+.icon.star {
+  width: 1em;
+  height: 1em;
+}
+.star-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  padding: 0.1em;
+  border-radius: 50%;
+  background-color: var(--My-B);
+}
+.icon.mobile {
+  width: 10em;
+  height: 10em;
+}
+
+body {
+  background-color: var(--V-D-B);
+  color: var(--L-G);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card {
+  width: fit-content;
+  background-color: var(--D-B);
+  padding: 1.5em;
+  border-radius: 2em;
+  line-height: 1.5;
+  padding: 2em;
+  /* Flex */
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 1.2em;
+}
+
+/* Second Card */
+.thanks {
+  align-items: center;
+  text-align: center;
+}
+
+
+.card h2 {
+  color: #fff;
+  font-size: var(--h-f);
+}
+.thanks svg + p {
+  color: var(--orange);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background-color: var(--My-B);
+}
+.card p {
+  max-inline-size: 32ch;
+}
+#list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#list li {
+  width: 3em;
+  height: 3em;
+  background-color: var(--My-B);
+  border-radius: 50%;
+  line-height: 3em;
+  text-align: center;
+}
+#list li:hover {
+  color: #fff;
+  background-color: var(--orange);
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+[type="submit"] {
+  border: none;
+  text-transform: Uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: var(--orange);
+  padding: 0.7em 0;
+  border-radius: 3em;
+}
+[type="submit"]:hover {
+  color: var(--orange);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
