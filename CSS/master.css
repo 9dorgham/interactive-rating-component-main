@@ -28,16 +28,6 @@
   width: 1em;
   height: 1em;
 }
-.star-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3em;
-  height: 3em;
-  padding: 0.1em;
-  border-radius: 50%;
-  background-color: var(--My-B);
-}
 .icon.mobile {
   width: 10em;
   height: 10em;
@@ -57,7 +47,6 @@ body {
 .card {
   width: fit-content;
   background-color: var(--D-B);
-  padding: 1.5em;
   border-radius: 2em;
   line-height: 1.5;
   padding: 2em;
@@ -65,6 +54,17 @@ body {
   display: flex;
   flex-flow: column wrap;
   row-gap: 1.2em;
+}
+
+.star-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  padding: 0.1em;
+  border-radius: 50%;
+  background-color: var(--My-B);
 }
 
 /* Second Card */
