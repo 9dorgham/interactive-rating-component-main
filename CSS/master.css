@@ -74,9 +74,10 @@ body {
 }
 
 
-.card h2 {
+h1 {
   color: #fff;
   font-size: var(--h-f);
+  font-weight: 500;
 }
 .thanks svg + p {
   color: var(--orange);
